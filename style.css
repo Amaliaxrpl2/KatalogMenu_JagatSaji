@@ -1,0 +1,874 @@
+/* ==================================
+   JAGATSAJI
+   DESAIN MENGIKUTI PDF
+================================== */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ==================================
+   NAVBAR
+================================== */
+
+nav {
+    width: 100%;
+    background: rgb(5, 5, 0);
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+    min-height: 75px;
+}
+
+nav .wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+
+.logo a {
+    color: #f8f6f5;
+    font-size: 27px;
+    font-family: Cambria, Georgia, serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-icon {
+    display: none;
+    color: #e8b477
+}
+
+.logo-name {
+    color: #f8f6f5;
+}
+
+.logo-name span {
+    color: #e8b477;
+    font-style: italic;
+}
+
+.logo small {
+    display: none;
+}
+
+/* MENU NAVBAR */
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    list-style: none;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    color: rgb(244, 242, 242);
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 5px;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #f0960e;
+    text-decoration: underline;
+}
+
+/* IKON */
+
+.menu ul li.ikon a {
+    color: #f0960e;
+    font-size: 17px;
+    padding: 5px;
+}
+
+.menu ul li.ikon a:hover {
+    color: white;
+}
+
+/* TOMBOL PESAN */
+
+.menu ul li a.order {
+    background: #f0960e;
+    border-radius: 20px;
+    margin-top: 0;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu ul li a.order:hover {
+    background: #d77d00;
+    color: white;
+    text-decoration: none;
+}
+
+/* ==================================
+   BANNER
+================================== */
+
+.hero-editorial {
+    width: 100%;
+    background: #fff;
+    padding: 35px 0;
+}
+
+.hero-editorial .wrapper {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+/* TEKS BANNER */
+
+.hero-copy {
+    flex: 1;
+}
+
+.hero-copy .eyebrow {
+    color: #b97b42;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.hero-copy h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #e8b477;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.hero-copy h1 span {
+    display: block;
+    color: #e8b477;
+    font-style: normal;
+}
+
+.hero-description {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* TOMBOL BANNER */
+
+.hero-button {
+    display: inline-block;
+    background: #f0960e;
+    border-radius: 20px;
+    padding: 10px 16px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #d77d00;
+}
+
+.hero-button span {
+    margin-left: 5px;
+}
+
+.hero-note {
+    display: none;
+}
+
+/* FOTO BANNER */
+
+.hero-visual {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-visual img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 10px 20px rgba(246, 182, 44, 0.5);
+}
+
+.photo-caption {
+    display: none;
+}
+
+/* ==================================
+   PILIHAN MENU
+================================== */
+
+.menu-editorial {
+    width: 100%;
+    background: white;
+    padding: 10px 0 35px;
+    border-top: 1px solid #ccc;
+}
+
+.menu-editorial .wrapper {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* JUDUL MENU */
+
+.menu-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-heading .eyebrow {
+    display: none;
+}
+
+.menu-heading h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    color: #e8b477;
+    font-weight: bold;
+}
+
+.menu-heading h2 span {
+    color: #e8b477;
+}
+
+.menu-intro {
+    display: none;
+}
+
+/* GRID MENU */
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0 20px;
+}
+
+/* KARTU MENU */
+
+.menu-card {
+    background: #edcf9d;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* FOTO MENU */
+
+.menu-photo {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-photo img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.menu-card:hover .menu-photo img {
+    transform: scale(1.04);
+}
+
+.photo-number {
+    display: none;
+}
+
+/* INFORMASI MENU */
+
+.menu-info {
+    padding: 12px 5px 8px;
+}
+
+.menu-category {
+    display: none;
+}
+
+.menu-info h3 {
+    color: #222;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.menu-info p {
+    color: #333;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* HARGA DAN TOMBOL */
+
+.menu-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(90, 60, 30, 0.2);
+    margin-top: 12px;
+    padding-top: 10px;
+}
+
+.menu-price {
+    color: #8b4b20;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.menu-link {
+    background: #f0960e;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 7px 11px;
+    border-radius: 15px;
+}
+
+.menu-link:hover {
+    background: #d77d00;
+}
+
+.menu-footer {
+    display: none;
+}
+/* ==================================
+   BOOK A TABLE
+================================== */
+
+.booking-section {
+    background: white;
+    padding: 45px 0;
+    border-top: 1px solid #ccc;
+}
+
+.booking-section .wrapper {
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.booking-heading {
+    margin-bottom: 20px;
+}
+
+.booking-heading .eyebrow {
+    display: none;
+}
+
+.booking-heading h2 {
+    color: #e8b477;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.booking-heading h2 span {
+    color: #e8b477;
+}
+
+.booking-heading > p:last-child {
+    color: #555;
+    font-size: 13px;
+}
+
+/* FORM DAN MAP */
+
+.booking-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* FORM */
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    height: 42px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 12px;
+    outline: none;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+    border-color: #e8b477;
+}
+
+.booking-form button {
+    width: fit-content;
+    padding: 10px 25px;
+    background: #f0960e;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background: #d77d00;
+}
+
+/* MAP */
+
+.booking-map {
+    width: 100%;
+    min-height: 280px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.booking-map iframe {
+    width: 100%;
+    height: 280px;
+    border: none;
+}
+
+/* ==================================
+   KOMENTAR REKANAN
+================================== */
+
+.testimonial-section {
+    background: white;
+    padding: 45px 0;
+}
+
+.testimonial-section .wrapper {
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.testimonial-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.testimonial-heading .eyebrow {
+    display: none;
+}
+
+.testimonial-heading h2 {
+    color: #252932;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 28px;
+}
+
+.testimonial-heading h2 span {
+    color: #252932;
+}
+
+.testimonial-heading > p:last-child {
+    color: #555;
+    font-size: 12px;
+}
+
+/* KARTU KOMENTAR */
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.testimonial-card {
+    background: #252932;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.testimonial-stars {
+    color: #f0960e;
+    margin-bottom: 10px;
+}
+
+.testimonial-card p {
+    color: white;
+    font-size: 11px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.testimonial-card h3 {
+    color: white;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.testimonial-card > span {
+    color: #ddd;
+    font-size: 10px;
+}
+
+/* ==================================
+   FOOTER
+================================== */
+
+.site-footer {
+    background: #151515;
+    color: white;
+    padding: 35px 5% 20px;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* KOLOM FOOTER */
+
+.footer-column h3 {
+    color: white;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    margin-bottom: 18px;
+}
+
+.footer-column p {
+    color: #ddd;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 3px;
+}
+
+/* TENGAH */
+
+.footer-center {
+    text-align: center;
+}
+
+/* KANAN */
+
+.footer-right {
+    text-align: right;
+}
+
+/* SOSIAL MEDIA */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    margin-top: 12px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #f0960e;
+    transform: translateY(-3px);
+}
+
+/* COPYRIGHT */
+
+.footer-bottom {
+    text-align: center;
+    color: #ddd;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12px;
+    margin-top: 30px;
+    padding-top: 15px;
+}
+
+/* ==================================
+   RESPONSIVE TABLET
+================================== */
+
+@media screen and (max-width: 850px) {
+
+    nav .wrapper {
+        padding: 12px 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .menu ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero-editorial .wrapper {
+        gap: 20px;
+    }
+
+    .hero-copy h1 {
+        font-size: 32px;
+    }
+
+    .hero-visual img {
+        height: 270px;
+    }
+
+    .menu-grid {
+        gap: 15px;
+        padding: 0;
+    }
+
+    .menu-photo img {
+        height: 150px;
+    }
+}
+
+/* ==================================
+   RESPONSIVE HP
+================================== */
+
+@media screen and (max-width: 600px) {
+
+    /* NAVBAR */
+
+    nav {
+        position: relative;
+    }
+
+    nav .wrapper {
+        flex-direction: column;
+        padding: 15px 10px;
+    }
+
+    .logo a {
+        font-size: 24px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu ul {
+        gap: 10px;
+    }
+
+    .menu ul li a {
+        font-size: 11px;
+        padding: 5px 2px;
+    }
+
+    .menu ul li.ikon a {
+        font-size: 14px;
+    }
+
+    .menu ul li a.order {
+        padding: 8px 12px;
+    }
+
+    /* BANNER */
+
+    .hero-editorial {
+        padding: 30px 0;
+    }
+
+    .hero-editorial .wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-copy h1 {
+        font-size: 34px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .hero-visual img {
+        height: 250px;
+    }
+
+    /* MENU */
+
+    .menu-heading h2 {
+        font-size: 29px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .menu-card {
+        padding: 8px;
+    }
+
+    .menu-photo img {
+        height: 125px;
+    }
+
+    .menu-info {
+        padding: 9px 3px;
+    }
+
+    .menu-info h3 {
+        font-size: 14px;
+    }
+
+    .menu-info p {
+        font-size: 10px;
+    }
+
+    .menu-price {
+        font-size: 10px;
+    }
+
+    .menu-link {
+        font-size: 9px;
+        padding: 5px 7px;
+    }
+
+    /* BOOKING */
+
+    .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-map iframe {
+        height: 250px;
+    }
+
+    /* KOMENTAR */
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .footer-column h3 {
+        font-size: 12px;
+    }
+
+    .footer-column p {
+        font-size: 9px;
+        overflow-wrap: anywhere;
+    }
+
+    .social-links {
+        gap: 8px;
+    }
+
+    .social-links a {
+        font-size: 15px;
+    }
+
+    .footer-bottom {
+        font-size: 10px;
+    }
+}
+
+/* ==================================
+   HP KECIL
+================================== */
+
+@media screen and (max-width: 380px) {
+
+    .menu ul {
+        gap: 7px;
+    }
+
+    .menu ul li a {
+        font-size: 10px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-photo img {
+        height: 190px;
+    }
+
+    .footer-column h3 {
+        font-size: 10px;
+    }
+
+    .footer-column p {
+        font-size: 8px;
+    }
+}
